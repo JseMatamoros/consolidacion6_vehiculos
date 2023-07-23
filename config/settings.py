@@ -37,9 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'vehiculo.apps.VehiculoConfig',
     'bootstrap5',    
     'crispy_forms',    
-    'vehiculo',
+    # 'vehiculo',
 ]
 
 MIDDLEWARE = [

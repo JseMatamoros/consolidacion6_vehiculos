@@ -1,6 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
-
+# from django.contrib.auth.models import AbstractUser, Permission
 
 class Vehiculo(models.Model):
     MARCAS = (
@@ -43,6 +42,8 @@ class Vehiculo(models.Model):
         
     fecha_creacion = models.DateTimeField(auto_now_add=True)
     fecha_modificacion = models.DateTimeField(auto_now=True)
-
+    
     def __str__(self):
         return self.marca + ' ' + self.modelo
+
+
